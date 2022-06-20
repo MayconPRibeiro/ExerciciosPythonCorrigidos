@@ -73,19 +73,11 @@ def exercicio09():
         print('O valor de {} maçã(s) ficou em R${}' .format(maca, total))
 
 def exercicio10():
-    n1 = int(input('Digite um número: '))
-    n2 = int(input('Digite outro número: '))
-    n3 = int(input('Digite outro número: '))
-    n4 = int(input('Digite outro número: '))
-    n5 = int(input('Digite outro número: '))
-    n6 = int(input('Digite outro número: '))
-    n7 = int(input('Digite outro número: '))
-    n8 = int(input('Digite outro número: '))
-    n9 = int(input('Digite outro número: '))
-    n10 = int(input('Digite outro número: '))
-    lista = n1, n2, n3, n4, n5, n6, n7, n8, n9, n10
-    for i in lista:
-        return sorted(lista)
+    lista = []
+    for i in range(1, 11):
+        valor = int(input('Digite um número: '))
+        lista.append(valor)
+    return sorted(lista)
 
 def exercicio11():
     salario = float(input('Digite seu salário fixo em R$:'))
