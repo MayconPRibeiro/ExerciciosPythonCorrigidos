@@ -75,7 +75,7 @@ def exercicio09():
 def exercicio10():
     lista = []
     for i in range(1, 11):
-        valor = int(input('Digite um número: '))
+        valor = float(input('Digite um número: '))
         lista.append(valor)
     return sorted(lista)
 
@@ -130,7 +130,7 @@ def exercicio15():
         if n<0:
             lista += +1
 
-    print('Sua lista possui {} números negativos' .format(lista))
+    return '\nSua lista possui {} números negativos' .format(lista)
 
 def exercicio16():
     lista = 0
@@ -139,7 +139,7 @@ def exercicio16():
         if n<40:
             lista += n
 
-    print('O resultado da sua soma é {}' .format(lista))
+    return '\nO resultado da sua soma é {}' .format(lista)
 
 def exercicio17():
     aux = 0
@@ -150,7 +150,7 @@ def exercicio17():
         quantidade += +1
         result = aux/quantidade
 
-    print('{} / {} = {}' .format(aux, quantidade, result))
+    return '\n{} / {} = {}' .format(aux, quantidade, result)
 
 def exercicio18():
    n = int(input('Quantos números deseja digitar? '))
